@@ -13,7 +13,7 @@ const cities = [
     id: 'beijing',
     name: { en: 'Beijing', zh: '北京' },
     highlights: { en: 'Forbidden City, Great Wall', zh: '故宫、长城' },
-    image: 'https://images.unsplash.com/photo-1559717201-fbb671ff56b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: 'https://picsum.photos/1000/600?random=1',
     duration: '2-3',
     rating: 4.9
   },
@@ -21,7 +21,7 @@ const cities = [
     id: 'shanghai',
     name: { en: 'Shanghai', zh: '上海' },
     highlights: { en: 'The Bund, Yu Garden', zh: '外滩、豫园' },
-    image: 'https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: 'https://picsum.photos/1000/600?random=2',
     duration: '2-3',
     rating: 4.8
   },
@@ -29,7 +29,7 @@ const cities = [
     id: 'hangzhou',
     name: { en: 'Hangzhou', zh: '杭州' },
     highlights: { en: 'West Lake, Tea Culture', zh: '西湖、茶文化' },
-    image: 'https://images.unsplash.com/photo-1609920658906-8223bd289001?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: 'https://picsum.photos/1000/600?random=3',
     duration: '1-2',
     rating: 4.7
   },
@@ -37,7 +37,7 @@ const cities = [
     id: 'guangzhou',
     name: { en: 'Guangzhou', zh: '广州' },
     highlights: { en: 'Canton Tower, Dim Sum', zh: '广州塔、粤式茶点' },
-    image: 'https://images.unsplash.com/photo-1564173555298-8d66b6af8dd0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: 'https://picsum.photos/1000/600?random=4',
     duration: '1-2',
     rating: 4.6
   },
@@ -45,7 +45,7 @@ const cities = [
     id: 'chengdu',
     name: { en: 'Chengdu', zh: '成都' },
     highlights: { en: 'Giant Pandas, Hotpot', zh: '大熊猫、火锅' },
-    image: 'https://images.unsplash.com/photo-1538766017398-415434a31a5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+    image: 'https://picsum.photos/1000/600?random=5',
     duration: '1-2',
     rating: 4.8
   }

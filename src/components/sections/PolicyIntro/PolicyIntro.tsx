@@ -112,7 +112,7 @@ export const PolicyIntro: React.FC = () => {
           >
             <motion.div className={styles.imageContainer} variants={itemVariants}>
               <img 
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                src="https://picsum.photos/1200/800?random=6"
                 alt={t('policyIntro.imageAlt')}
                 className={styles.mainImage}
               />

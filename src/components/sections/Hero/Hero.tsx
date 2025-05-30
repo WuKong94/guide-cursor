@@ -9,15 +9,15 @@ import styles from './Hero.module.scss';
 
 const heroImages = [
   {
-    url: 'https://images.unsplash.com/photo-1559717201-fbb671ff56b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
+    url: 'https://picsum.photos/2340/1560?random=7',
     key: 'beijing'
   },
   {
-    url: 'https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
+    url: 'https://picsum.photos/2340/1560?random=8',
     key: 'shanghai'
   },
   {
-    url: 'https://images.unsplash.com/photo-1609920658906-8223bd289001?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
+    url: 'https://picsum.photos/2340/1560?random=9',
     key: 'hangzhou'
   }
 ];
@@ -25,6 +25,7 @@ const heroImages = [
 export const Hero: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [scrollY, setScrollY] = useState(0);
+  const [imageLoadErrors, setImageLoadErrors] = useState<Set<number>>(new Set());
   const { ref, isVisible } = useScrollAnimation();
   const { t } = useTranslation();
 
@@ -41,6 +42,10 @@ export const Hero: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const handleImageError = (index: number) => {
+    setImageLoadErrors(prev => new Set(prev).add(index));
+  };
+
   const parallaxY = scrollY * 0.5;
   const currentImage = heroImages[currentImageIndex];
 
@@ -55,7 +60,9 @@ export const Hero: React.FC = () => {
               index === currentImageIndex ? styles.active : ''
             }`}
             style={{
-              backgroundImage: `url(${image.url})`,
+              backgroundImage: imageLoadErrors.has(index) 
+                ? 'linear-gradient(135deg, #1a365d 0%, #2d5a87 100%)'
+                : `url(${image.url})`,
               transform: `translateY(${parallaxY}px)`
             }}
             initial={{ opacity: 0, scale: 1.1 }}
@@ -64,7 +71,16 @@ export const Hero: React.FC = () => {
               scale: index === currentImageIndex ? 1 : 1.1
             }}
             transition={{ duration: 1.5, ease: "easeInOut" }}
-          />
+          >
+            {!imageLoadErrors.has(index) && (
+              <img
+                src={image.url}
+                alt=""
+                style={{ display: 'none' }}
+                onError={() => handleImageError(index)}
+              />
+            )}
+          </motion.div>
         ))}
         <div className={styles.overlay} />
       </div>
