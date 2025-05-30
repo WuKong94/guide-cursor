@@ -9,6 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- GitHub Pages 客户端路由处理脚本 -->
+    <script type="text/javascript">
+      // 检查是否有从404页面重定向回来的路径
+      (function() {
+        var redirect = sessionStorage.getItem('pathToRedirect');
+        if (redirect && redirect !== window.location.pathname) {
+          sessionStorage.removeItem('pathToRedirect');
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
