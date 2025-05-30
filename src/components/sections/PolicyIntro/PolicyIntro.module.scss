@@ -1,0 +1,316 @@
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+.policyIntro {
+  padding: 8rem 0;
+  background: $cloud-white;
+  position: relative;
+
+  @include mobile {
+    padding: 5rem 0;
+  }
+
+  @include tablet {
+    padding: 7rem 0;
+  }
+
+  .container {
+    @include container;
+    padding-top: 24px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    align-items: center;
+
+    @include desktop {
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+    }
+  }
+
+  .textContent {
+    .badge {
+      display: inline-block;
+      background: $gradient-gold;
+      color: $dark-ink;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      box-shadow: $shadow-lg;
+    }
+
+    .title {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      color: $dark-ink;
+      line-height: 1.2;
+    }
+
+    .description {
+      font-size: 1.2rem;
+      color: $soft-gray;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+    }
+
+    .features {
+      margin-bottom: 3rem;
+
+      .feature {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        align-items: flex-start;
+
+        .featureIcon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 48px;
+          height: 48px;
+          background: $gradient-red;
+          border-radius: 12px;
+          color: $cloud-white;
+          font-size: 1.2rem;
+          flex-shrink: 0;
+          box-shadow: $shadow-md;
+        }
+
+        .featureContent {
+          h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: $dark-ink;
+            margin-bottom: 0.5rem;
+          }
+
+          p {
+            color: $soft-gray;
+            line-height: 1.5;
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .benefits {
+      margin-bottom: 3rem;
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: $dark-ink;
+        margin-bottom: 1.5rem;
+      }
+
+      .benefitsList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          margin-bottom: 1rem;
+          color: $dark-ink;
+
+          svg {
+            color: $secondary-gold;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+          }
+
+          span {
+            font-size: 1rem;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+
+    .actions {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+    }
+  }
+
+  .visual {
+    position: relative;
+
+    @include mobile {
+      order: -1;
+    }
+
+    .imageContainer {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: $shadow-xl;
+
+      .mainImage {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        display: block;
+
+        @include tablet {
+          height: 500px;
+        }
+      }
+
+      .floatingCard {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 12px;
+        padding: 1.2rem;
+        box-shadow: $shadow-xl;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        min-width: 80px;
+        z-index: 10;
+
+        .statNumber {
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: $primary-red;
+          margin-bottom: 0.25rem;
+          text-align: center;
+          display: block;
+        }
+
+        .statLabel {
+          font-size: 0.8rem;
+          color: $soft-gray;
+          font-weight: 500;
+          text-align: center;
+          white-space: nowrap;
+          display: block;
+        }
+
+        &.stat1 {
+          top: 15%;
+          right: 10%;
+          animation: float 3s ease-in-out infinite;
+
+          @include mobile {
+            top: 10%;
+            right: 8%;
+            padding: 1rem;
+            
+            .statNumber {
+              font-size: 1.5rem;
+            }
+            .statLabel {
+              font-size: 0.7rem;
+            }
+          }
+        }
+
+        &.stat2 {
+          bottom: 20%;
+          left: 8%;
+          animation: float 3s ease-in-out infinite 1s;
+
+          @include mobile {
+            bottom: 15%;
+            left: 5%;
+            padding: 1rem;
+            
+            .statNumber {
+              font-size: 1.5rem;
+            }
+            .statLabel {
+              font-size: 0.7rem;
+            }
+          }
+        }
+
+        &.stat3 {
+          top: 45%;
+          right: 5%;
+          transform: translateY(-50%);
+          animation: float 3s ease-in-out infinite 2s;
+
+          @include mobile {
+            top: 50%;
+            right: 3%;
+            padding: 1rem;
+            
+            .statNumber {
+              font-size: 1.5rem;
+            }
+            .statLabel {
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 浮动装饰元素
+.policyIntro::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, rgba(220, 20, 60, 0.1), rgba(255, 215, 0, 0.1));
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 4s ease-in-out infinite;
+}
+
+.policyIntro::after {
+  content: '';
+  position: absolute;
+  bottom: 15%;
+  right: 8%;
+  width: 120px;
+  height: 120px;
+  border: 2px solid rgba(255, 215, 0, 0.2);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 4s ease-in-out infinite 1.5s;
+}
+
+// 响应式优化
+@include mobile {
+  .policyIntro {
+    padding: 4rem 0;
+    
+    .content {
+      gap: 2rem;
+    }
+    
+    .textContent {
+      .features {
+        margin-bottom: 2rem;
+        
+        .feature {
+          margin-bottom: 1.5rem;
+        }
+      }
+      
+      .benefits {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+} 

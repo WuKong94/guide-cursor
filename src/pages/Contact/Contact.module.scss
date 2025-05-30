@@ -1,0 +1,322 @@
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+.contact {
+  min-height: 100vh;
+  padding: 8rem 0 4rem;
+  background: $cloud-white;
+
+  @include mobile {
+    padding: 6rem 0 3rem;
+  }
+
+  .container {
+    @include container;
+    padding-top: 24px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 4rem;
+
+    @include mobile {
+      margin-bottom: 3rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: $gradient-red;
+      color: $cloud-white;
+      padding: 0.6rem 1.5rem;
+      border-radius: 2rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      box-shadow: $shadow-lg;
+
+      svg {
+        font-size: 1rem;
+      }
+    }
+
+    .title {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: bold;
+      margin-bottom: 1rem;
+      @include gradient-text($gradient-red);
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: $soft-gray;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+  }
+
+  .contactGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 6rem;
+
+    @include mobile {
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .contactCard {
+      @include card-base;
+      @include card-hover;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem;
+      border: 1px solid rgba(220, 20, 60, 0.1);
+
+      .cardIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background: $gradient-red;
+        border-radius: 12px;
+        color: $cloud-white;
+        font-size: 1.5rem;
+        flex-shrink: 0;
+      }
+
+      .cardContent {
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: $dark-ink;
+          margin-bottom: 0.5rem;
+        }
+
+        .contactValue {
+          font-size: 1rem;
+          font-weight: 600;
+          color: $primary-red;
+          margin-bottom: 0.25rem;
+        }
+
+        .contactDescription {
+          font-size: 0.9rem;
+          color: $soft-gray;
+        }
+      }
+    }
+  }
+
+  .mainContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    margin-bottom: 6rem;
+
+    @include tablet {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    @include mobile {
+      margin-bottom: 4rem;
+    }
+
+    .formSection {
+      h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $dark-ink;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        color: $soft-gray;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+      }
+
+      .contactForm {
+        .formRow {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1.5rem;
+          margin-bottom: 1.5rem;
+
+          @include mobile {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        .formGroup {
+          margin-bottom: 1.5rem;
+
+          label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            color: $dark-ink;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+
+            svg {
+              color: $primary-red;
+              font-size: 1rem;
+            }
+          }
+
+          input,
+          select,
+          textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 2px solid rgba(220, 20, 60, 0.1);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: $cloud-white;
+
+            &:focus {
+              outline: none;
+              border-color: $primary-red;
+              box-shadow: 0 0 0 3px rgba(220, 20, 60, 0.1);
+            }
+
+            &::placeholder {
+              color: lighten($soft-gray, 10%);
+            }
+          }
+
+          select {
+            cursor: pointer;
+          }
+
+          textarea {
+            resize: vertical;
+            min-height: 120px;
+          }
+        }
+
+        .submitButton {
+          width: 100%;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .faqSection {
+      h2 {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: $dark-ink;
+        margin-bottom: 2rem;
+      }
+
+      .faqList {
+        .faqItem {
+          padding: 1.5rem;
+          background: linear-gradient(135deg, rgba(220, 20, 60, 0.03), rgba(255, 215, 0, 0.03));
+          border-radius: 12px;
+          border: 1px solid rgba(220, 20, 60, 0.1);
+          margin-bottom: 1rem;
+
+          h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: $dark-ink;
+            margin-bottom: 0.75rem;
+          }
+
+          p {
+            color: $soft-gray;
+            line-height: 1.5;
+            font-size: 0.95rem;
+          }
+        }
+      }
+    }
+  }
+
+  .ctaSection {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, rgba(220, 20, 60, 0.05), rgba(255, 215, 0, 0.05));
+    border-radius: 20px;
+    border: 1px solid rgba(220, 20, 60, 0.1);
+
+    @include mobile {
+      padding: 3rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: $dark-ink;
+
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: $soft-gray;
+      margin-bottom: 2.5rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+
+      @include mobile {
+        font-size: 1.1rem;
+      }
+    }
+
+    .ctaActions {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+    }
+  }
+}
+
+// 浮动装饰元素
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 20%;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(220, 20, 60, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 8s ease-in-out infinite;
+}
+
+.contact::after {
+  content: '';
+  position: absolute;
+  bottom: 15%;
+  right: -50px;
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgba(255, 215, 0, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: float 8s ease-in-out infinite 4s;
+} 

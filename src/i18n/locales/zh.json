@@ -1,0 +1,330 @@
+{
+  "navigation": {
+    "home": "首页",
+    "cities": "城市",
+    "policy": "政策",
+    "tours": "旅游",
+    "contact": "联系"
+  },
+  "hero": {
+    "badge": "144小时免签",
+    "title": {
+      "main": "发现",
+      "accent": "中国",
+      "sub": "144小时内"
+    },
+    "description": "在五座宏伟城市中体验古老传统与现代奇迹的完美融合。从长城到未来主义天际线，从正宗美食到文化瑰宝——全部享受免签便利。",
+    "stats": {
+      "cities": "城市",
+      "hours": "小时",
+      "countries": "国家"
+    },
+    "actions": {
+      "start": "开始您的旅程",
+      "watch": "观看视频"
+    },
+    "scroll": "滚动探索",
+    "imageInfo": {
+      "beijing": {
+        "title": "北京紫禁城",
+        "description": "古代皇家威严"
+      },
+      "shanghai": {
+        "title": "上海外滩",
+        "description": "现代与传统交融"
+      },
+      "hangzhou": {
+        "title": "杭州西湖",
+        "description": "人间天堂"
+      }
+    }
+  },
+  "header": {
+    "logo": "发现中国",
+    "startPlanning": "开始规划",
+    "language": {
+      "en": "EN",
+      "zh": "中文"
+    }
+  },
+  "citiesPreview": {
+    "badge": "精选目的地",
+    "title": "五座宏伟城市",
+    "subtitle": "通过我们的144小时免签项目，发现中国最具代表性目的地的美丽与文化",
+    "explore": "探索",
+    "days": "天",
+    "viewAll": "查看所有城市",
+    "customize": "定制您的行程"
+  },
+  "policyIntro": {
+    "badge": "免签旅行",
+    "title": "144小时过境免签",
+    "description": "无需签证申请的便利体验中国。非常适合短期商务旅行、中转或快速文化体验。",
+    "imageAlt": "中国旅行政策插图",
+    "features": {
+      "duration": {
+        "title": "144小时停留",
+        "description": "在指定城市享受长达6天的免签旅行"
+      },
+      "cities": {
+        "title": "5个主要城市",
+        "description": "可访问北京、上海、广州、成都和杭州"
+      },
+      "countries": {
+        "title": "53个国家符合条件",
+        "description": "来自53个国家的公民可享受此优惠"
+      }
+    },
+    "benefits": {
+      "title": "主要优势",
+      "noVisa": "无需申请签证",
+      "easyCities": "轻松访问主要旅游城市",
+      "quickProcess": "快速出入境通关",
+      "multipleEntries": "在指定区域内灵活旅行"
+    },
+    "stats": {
+      "hours": "小时",
+      "countries": "国家",
+      "cities": "城市"
+    },
+    "learnMore": "了解更多",
+    "checkEligibility": "检查资格"
+  },
+  "cities": {
+    "badge": "探索中国",
+    "title": "五座宏伟城市",
+    "subtitle": "通过我们全面的城市指南和旅行见解，探索中国最具代表性的目的地",
+    "categories": {
+      "all": "所有城市",
+      "historical": "历史古迹",
+      "modern": "现代都市",
+      "nature": "自然风光",
+      "cultural": "文化体验"
+    },
+    "explore": "探索城市",
+    "days": "天",
+    "attractions": "景点",
+    "viewDetails": "查看详情",
+    "cta": {
+      "title": "准备开始您的旅程了吗？",
+      "description": "通过我们的专家指南和当地见解，规划您的完美中国之旅",
+      "plan": "规划您的行程",
+      "contact": "联系我们"
+    }
+  },
+  "policy": {
+    "badge": "官方政策",
+    "title": "144小时过境免签",
+    "subtitle": "了解中国对符合条件旅客的过境免签政策的所有信息",
+    "stats": {
+      "hours": "小时",
+      "countries": "国家",
+      "cities": "城市"
+    },
+    "requirements": {
+      "title": "入境要求",
+      "transit": {
+        "title": "仅限过境",
+        "description": "必须前往第三国/地区，并持有确认的续程机票"
+      },
+      "duration": {
+        "title": "144小时限制",
+        "description": "从入境印章开始最多停留144小时（6天）"
+      },
+      "area": {
+        "title": "指定区域",
+        "description": "旅行限制在各城市的特定行政区域内"
+      },
+      "passport": {
+        "title": "有效护照",
+        "description": "护照有效期必须在入境日期起至少6个月"
+      }
+    },
+    "cities": {
+      "title": "符合条件的入境城市",
+      "subtitle": "通过这些指定机场和港口入境，符合144小时过境免签条件"
+    },
+    "process": {
+      "title": "申请流程",
+      "arrival": {
+        "title": "抵达指定口岸",
+        "description": "在符合条件的机场或港口降落，携带您的续程机票"
+      },
+      "immigration": {
+        "title": "填写入境表格",
+        "description": "填写入境卡并声明您的144小时过境意图"
+      },
+      "stamp": {
+        "title": "获得入境印章",
+        "description": "在您的护照上盖上144小时过境许可印章"
+      },
+      "explore": {
+        "title": "探索和享受",
+        "description": "在144小时窗口内探索指定区域"
+      }
+    },
+    "countries": {
+      "title": "符合条件的国家",
+      "subtitle": "以下53个国家的公民符合144小时过境免签条件"
+    },
+    "tips": {
+      "title": "重要指南",
+      "documents": {
+        "title": "必需文件",
+        "passport": "有效护照（6个月以上有效期）",
+        "ticket": "确认的第三国机票",
+        "hotel": "酒店预订确认（建议）"
+      },
+      "restrictions": {
+        "title": "旅行限制",
+        "area": "必须停留在指定行政区域内",
+        "work": "禁止商业活动和就业",
+        "extension": "不可延期 - 必须在144小时内离境"
+      }
+    },
+    "cta": {
+      "title": "获取官方指南",
+      "description": "下载完整指南，联系我们获得个性化旅行协助",
+      "download": "下载指南",
+      "contact": "联系支持"
+    }
+  },
+  "tours": {
+    "badge": "旅游套餐",
+    "title": "精选中国之旅",
+    "subtitle": "通过我们专为144小时免签体验而精心设计的旅游套餐探索中国",
+    "categories": {
+      "all": "所有行程",
+      "cultural": "文化遗产",
+      "modern": "现代都市",
+      "culinary": "美食之旅",
+      "heritage": "世界遗产"
+    },
+    "days": "天",
+    "people": "人",
+    "cities": "城市",
+    "highlights": "亮点",
+    "from": "起价",
+    "bookNow": "立即预订",
+    "viewDetails": "查看详情",
+    "cta": {
+      "title": "准备好您的中国冒险了吗？",
+      "description": "让我们为您制定个性化行程，最大化您的144小时体验",
+      "customize": "定制行程",
+      "consultation": "免费咨询"
+    }
+  },
+  "contact": {
+    "badge": "联系我们",
+    "title": "联系我们",
+    "subtitle": "准备开始您的中国冒险了吗？我们在这里帮助您规划完美的144小时体验",
+    "info": {
+      "phone": "电话",
+      "email": "邮箱",
+      "address": "地址",
+      "hours": "营业时间"
+    },
+    "form": {
+      "title": "发送消息",
+      "description": "填写下面的表格，我们将在24小时内回复您",
+      "name": "姓名",
+      "namePlaceholder": "请输入您的姓名",
+      "email": "邮箱地址",
+      "emailPlaceholder": "请输入您的邮箱",
+      "phone": "电话号码",
+      "phonePlaceholder": "请输入您的电话号码",
+      "preferredDate": "期望出行日期",
+      "service": "所需服务",
+      "selectService": "请选择服务类型...",
+      "services": {
+        "tour": "旅游套餐",
+        "visa": "签证协助",
+        "transport": "交通服务",
+        "accommodation": "住宿安排",
+        "other": "其他咨询"
+      },
+      "subject": "主题",
+      "subjectPlaceholder": "简要描述您的咨询内容",
+      "message": "消息内容",
+      "messagePlaceholder": "告诉我们您的旅行计划、问题或特殊要求...",
+      "submit": "发送消息"
+    },
+    "faq": {
+      "title": "常见问题",
+      "q1": {
+        "question": "如何获得144小时过境免签资格？",
+        "answer": "您必须是53个符合条件国家之一的公民，持有确认的第三国机票，并通过指定口岸入境。"
+      },
+      "q2": {
+        "question": "可以延长144小时的停留时间吗？",
+        "answer": "不可以，144小时过境免签不能延期。您必须在分配的时间内离境。"
+      },
+      "q3": {
+        "question": "停留期间可以访问哪些地区？",
+        "answer": "您可以在入境城市的指定行政区域内旅行。每个城市都有您必须遵守的特定边界。"
+      },
+      "q4": {
+        "question": "旅行期间是否提供24小时支持？",
+        "answer": "是的，我们为所有客户在中国停留期间提供24小时紧急支持。"
+      }
+    },
+    "cta": {
+      "title": "需要即时帮助？",
+      "description": "我们的旅行专家24小时在线，随时为您解答紧急咨询",
+      "call": "立即致电",
+      "whatsapp": "微信联系"
+    }
+  },
+  "cityDetail": {
+    "back": "返回城市",
+    "days": "天",
+    "hours": "小时",
+    "notFound": "未找到城市",
+    "backToCities": "返回城市列表",
+    "attractions": {
+      "title": "必游景点"
+    },
+    "cuisine": {
+      "title": "当地美食"
+    },
+    "tips": {
+      "title": "旅行贴士",
+      "transportation": "交通",
+      "language": "语言",
+      "currency": "货币",
+      "weather": "天气"
+    },
+    "cta": {
+      "title": "准备探索{{city}}了吗？",
+      "description": "预订您的旅游或为您的访问制定定制行程",
+      "bookTour": "预订行程",
+      "customPlan": "定制计划"
+    }
+  },
+  "footer": {
+    "description": "通过我们精心策划的144小时免签旅行体验，发现中国的真正美丽。",
+    "address": "中国北京",
+    "quickLinks": "快速链接",
+    "cities": "精选城市",
+    "support": "支持",
+    "faq": "常见问题",
+    "help": "帮助中心",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "cookies": "Cookie政策",
+    "newsletter": {
+      "title": "保持更新",
+      "description": "获取最新旅行贴士和独家优惠，直接发送到您的邮箱。",
+      "placeholder": "输入您的邮箱地址",
+      "subscribe": "订阅"
+    },
+    "rights": "版权所有。"
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "出现错误",
+    "retry": "重试",
+    "viewMore": "查看更多",
+    "learnMore": "了解更多"
+  }
+} 

@@ -1,0 +1,330 @@
+{
+  "navigation": {
+    "home": "Home",
+    "cities": "Cities",
+    "policy": "Policy",
+    "tours": "Tours",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "144-Hour Visa Free",
+    "title": {
+      "main": "Discover",
+      "accent": "China",
+      "sub": "in 144 Hours"
+    },
+    "description": "Experience the perfect blend of ancient traditions and modern marvels across five magnificent cities. From the Great Wall to futuristic skylines, authentic cuisine to cultural treasures - all with visa-free convenience.",
+    "stats": {
+      "cities": "Cities",
+      "hours": "Hours",
+      "countries": "Countries"
+    },
+    "actions": {
+      "start": "Start Your Journey",
+      "watch": "Watch Video"
+    },
+    "scroll": "Scroll to explore",
+    "imageInfo": {
+      "beijing": {
+        "title": "Forbidden City, Beijing",
+        "description": "Ancient imperial majesty"
+      },
+      "shanghai": {
+        "title": "The Bund, Shanghai", 
+        "description": "Modern meets traditional"
+      },
+      "hangzhou": {
+        "title": "West Lake, Hangzhou",
+        "description": "Paradise on Earth"
+      }
+    }
+  },
+  "header": {
+    "logo": "Discover China",
+    "startPlanning": "Start Planning",
+    "language": {
+      "en": "EN",
+      "zh": "中文"
+    }
+  },
+  "citiesPreview": {
+    "badge": "Featured Destinations",
+    "title": "Five Magnificent Cities",
+    "subtitle": "Discover the beauty and culture of China's most iconic destinations with our 144-hour visa-free program",
+    "explore": "Explore",
+    "days": "Days",
+    "viewAll": "View All Cities",
+    "customize": "Customize Your Trip"
+  },
+  "policyIntro": {
+    "badge": "Visa-Free Travel",
+    "title": "144-Hour Transit Visa Exemption",
+    "description": "Experience China without the hassle of visa applications. Perfect for short business trips, layovers, or quick cultural immersions.",
+    "imageAlt": "China travel policy illustration",
+    "features": {
+      "duration": {
+        "title": "144 Hours Stay",
+        "description": "Up to 6 days of visa-free travel in designated cities"
+      },
+      "cities": {
+        "title": "5 Major Cities",
+        "description": "Access to Beijing, Shanghai, Guangzhou, Chengdu, and Hangzhou"
+      },
+      "countries": {
+        "title": "53 Countries Eligible",
+        "description": "Citizens from 53 countries can enjoy this benefit"
+      }
+    },
+    "benefits": {
+      "title": "Key Benefits",
+      "noVisa": "No visa application required",
+      "easyCities": "Easy access to major tourist cities",
+      "quickProcess": "Quick immigration clearance",
+      "multipleEntries": "Flexible travel within designated areas"
+    },
+    "stats": {
+      "hours": "Hours",
+      "countries": "Countries",
+      "cities": "Cities"
+    },
+    "learnMore": "Learn More",
+    "checkEligibility": "Check Eligibility"
+  },
+  "cities": {
+    "badge": "Discover China",
+    "title": "Five Magnificent Cities",
+    "subtitle": "Explore China's most iconic destinations with our comprehensive city guides and travel insights",
+    "categories": {
+      "all": "All Cities",
+      "historical": "Historical",
+      "modern": "Modern",
+      "nature": "Nature",
+      "cultural": "Cultural"
+    },
+    "explore": "Explore City",
+    "days": "Days",
+    "attractions": "Attractions",
+    "viewDetails": "View Details",
+    "cta": {
+      "title": "Ready to Start Your Journey?",
+      "description": "Plan your perfect trip to China with our expert guides and local insights",
+      "plan": "Plan Your Trip",
+      "contact": "Contact Us"
+    }
+  },
+  "policy": {
+    "badge": "Official Policy",
+    "title": "144-Hour Visa-Free Transit",
+    "subtitle": "Everything you need to know about China's visa-free transit policy for eligible travelers",
+    "stats": {
+      "hours": "Hours",
+      "countries": "Countries",
+      "cities": "Cities"
+    },
+    "requirements": {
+      "title": "Entry Requirements",
+      "transit": {
+        "title": "Transit Only",
+        "description": "Must be in transit to a third country/region with confirmed onward ticket"
+      },
+      "duration": {
+        "title": "144-Hour Limit",
+        "description": "Maximum stay of 144 hours (6 days) from entry stamp"
+      },
+      "area": {
+        "title": "Designated Areas",
+        "description": "Travel restricted to specific administrative regions of each city"
+      },
+      "passport": {
+        "title": "Valid Passport",
+        "description": "Passport must be valid for at least 6 months from entry date"
+      }
+    },
+    "cities": {
+      "title": "Eligible Entry Cities",
+      "subtitle": "Enter through these designated airports and ports to qualify for 144-hour visa-free transit"
+    },
+    "process": {
+      "title": "Application Process",
+      "arrival": {
+        "title": "Arrive at Designated Port",
+        "description": "Land at one of the eligible airports or ports with your onward ticket"
+      },
+      "immigration": {
+        "title": "Complete Immigration Forms",
+        "description": "Fill out the arrival card and declare your 144-hour transit intention"
+      },
+      "stamp": {
+        "title": "Receive Entry Stamp",
+        "description": "Get your passport stamped with the 144-hour transit permission"
+      },
+      "explore": {
+        "title": "Explore & Enjoy",
+        "description": "Explore the designated areas within your 144-hour window"
+      }
+    },
+    "countries": {
+      "title": "Eligible Countries",
+      "subtitle": "Citizens from the following 53 countries are eligible for 144-hour visa-free transit"
+    },
+    "tips": {
+      "title": "Important Guidelines",
+      "documents": {
+        "title": "Required Documents",
+        "passport": "Valid passport (6+ months validity)",
+        "ticket": "Confirmed onward ticket to third country",
+        "hotel": "Hotel booking confirmation (recommended)"
+      },
+      "restrictions": {
+        "title": "Travel Restrictions",
+        "area": "Must stay within designated administrative areas",
+        "work": "Business activities and employment prohibited",
+        "extension": "Extensions not available - must depart within 144 hours"
+      }
+    },
+    "cta": {
+      "title": "Get Official Guidelines",
+      "description": "Download the complete guide and contact us for personalized travel assistance",
+      "download": "Download Guide",
+      "contact": "Contact Support"
+    }
+  },
+  "tours": {
+    "badge": "Travel Packages",
+    "title": "Curated China Tours",
+    "subtitle": "Discover China through our expertly crafted tour packages designed for the 144-hour visa-free experience",
+    "categories": {
+      "all": "All Tours",
+      "cultural": "Cultural Heritage",
+      "modern": "Modern Cities",
+      "culinary": "Culinary Journey",
+      "heritage": "UNESCO Sites"
+    },
+    "days": "Days",
+    "people": "People",
+    "cities": "Cities",
+    "highlights": "Highlights",
+    "from": "From",
+    "bookNow": "Book Now",
+    "viewDetails": "View Details",
+    "cta": {
+      "title": "Ready for Your China Adventure?",
+      "description": "Let us create a personalized itinerary that maximizes your 144-hour experience",
+      "customize": "Customize Tour",
+      "consultation": "Free Consultation"
+    }
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "title": "Contact Us",
+    "subtitle": "Ready to start your China adventure? We're here to help you plan the perfect 144-hour experience",
+    "info": {
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address", 
+      "hours": "Business Hours"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "description": "Fill out the form below and we'll get back to you within 24 hours",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "preferredDate": "Preferred Travel Date",
+      "service": "Service Needed",
+      "selectService": "Select a service...",
+      "services": {
+        "tour": "Tour Package",
+        "visa": "Visa Assistance",
+        "transport": "Transportation",
+        "accommodation": "Accommodation",
+        "other": "Other Inquiry"
+      },
+      "subject": "Subject",
+      "subjectPlaceholder": "Brief description of your inquiry",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your travel plans, questions, or special requirements...",
+      "submit": "Send Message"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": {
+        "question": "How do I qualify for the 144-hour visa-free transit?",
+        "answer": "You must be a citizen of one of the 53 eligible countries, have a confirmed onward ticket to a third country, and enter through designated ports."
+      },
+      "q2": {
+        "question": "Can I extend my 144-hour stay?",
+        "answer": "No, the 144-hour visa-free transit cannot be extended. You must depart within the allocated time frame."
+      },
+      "q3": {
+        "question": "What areas can I visit during my stay?",
+        "answer": "You can travel within the designated administrative regions of your entry city. Each city has specific boundaries you must respect."
+      },
+      "q4": {
+        "question": "Do you provide 24/7 support during my trip?",
+        "answer": "Yes, we offer 24/7 emergency support for all our clients throughout their stay in China."
+      }
+    },
+    "cta": {
+      "title": "Need Immediate Assistance?",
+      "description": "Our travel experts are available 24/7 to help with urgent inquiries",
+      "call": "Call Now",
+      "whatsapp": "WhatsApp"
+    }
+  },
+  "cityDetail": {
+    "back": "Back to Cities",
+    "days": "Days",
+    "hours": "Hours",
+    "notFound": "City not found",
+    "backToCities": "Back to Cities",
+    "attractions": {
+      "title": "Must-Visit Attractions"
+    },
+    "cuisine": {
+      "title": "Local Cuisine"
+    },
+    "tips": {
+      "title": "Travel Tips",
+      "transportation": "Transportation",
+      "language": "Language",
+      "currency": "Currency",
+      "weather": "Weather"
+    },
+    "cta": {
+      "title": "Ready to Explore {{city}}?",
+      "description": "Book your tour or create a custom itinerary for your visit",
+      "bookTour": "Book Tour",
+      "customPlan": "Custom Plan"
+    }
+  },
+  "footer": {
+    "description": "Discover the authentic beauty of China through our carefully curated 144-hour visa-free travel experiences.",
+    "address": "Beijing, China",
+    "quickLinks": "Quick Links",
+    "cities": "Featured Cities",
+    "support": "Support",
+    "faq": "FAQ",
+    "help": "Help Center",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "newsletter": {
+      "title": "Stay Updated",
+      "description": "Get the latest travel tips and exclusive offers delivered to your inbox.",
+      "placeholder": "Enter your email address",
+      "subscribe": "Subscribe"
+    },
+    "rights": "All rights reserved."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "viewMore": "View More",
+    "learnMore": "Learn More"
+  }
+} 

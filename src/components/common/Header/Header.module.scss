@@ -1,0 +1,287 @@
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: rgba(248, 249, 250, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(220, 20, 60, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease;
+
+  &.scrolled {
+    background: rgba(248, 249, 250, 0.98);
+    box-shadow: $shadow-lg;
+    border-bottom: 1px solid rgba(220, 20, 60, 0.2);
+  }
+
+  .container {
+    @include container;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 0;
+  }
+
+  .logo {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    .logoText {
+      color: $dark-ink;
+    }
+
+    .logoAccent {
+      color: $primary-red;
+      margin-left: 0.5rem;
+    }
+  }
+
+  .nav {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
+    min-width: 0;
+
+    @include mobile {
+      display: none;
+    }
+
+    .navLink {
+      text-decoration: none;
+      color: $dark-ink;
+      font-weight: 500;
+      padding: 0.75rem 0;
+      position: relative;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+      white-space: nowrap;
+
+      &:hover {
+        color: $primary-red;
+        transform: translateY(-1px);
+      }
+
+      &.active {
+        color: $primary-red;
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background: $gradient-red;
+          border-radius: $radius-full;
+        }
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+
+    @include desktop {
+      gap: 1.25rem;
+    }
+
+    .langButton {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1rem;
+      background: transparent;
+      border: 1px solid rgba(108, 117, 125, 0.3);
+      border-radius: $radius-lg;
+      color: $dark-ink;
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+
+      @include desktop {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+      }
+
+      &:hover {
+        border-color: $primary-red;
+        color: $primary-red;
+        background: rgba(220, 20, 60, 0.05);
+        transform: translateY(-1px);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+
+    .ctaButton {
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
+
+    .menuButton {
+      display: none;
+
+      @include mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        border: 1px solid rgba(108, 117, 125, 0.2);
+        border-radius: $radius-lg;
+        color: $dark-ink;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: rgba(220, 20, 60, 0.1);
+          border-color: $primary-red;
+          color: $primary-red;
+        }
+      }
+    }
+  }
+
+  .mobileMenu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(248, 249, 250, 0.98);
+    backdrop-filter: blur(20px);
+    z-index: 999;
+    padding: 2rem;
+
+    .mobileNav {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+      .mobileNavLink {
+        text-decoration: none;
+        color: $dark-ink;
+        font-size: 1.1rem;
+        font-weight: 500;
+        padding: 1.25rem 0;
+        border-bottom: 1px solid rgba(233, 236, 239, 0.8);
+        transition: all 0.3s ease;
+        position: relative;
+
+        &:hover {
+          color: $primary-red;
+          background: rgba(220, 20, 60, 0.02);
+          padding-left: 1rem;
+        }
+
+        &.active {
+          color: $primary-red;
+          font-weight: 600;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 20px;
+            background: $primary-red;
+            border-radius: $radius-full;
+          }
+        }
+      }
+
+      .mobileActions {
+        margin-top: 2rem;
+        padding-top: 2rem;
+        border-top: 1px solid rgba(233, 236, 239, 0.8);
+      }
+    }
+  }
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 998;
+    animation: fadeIn 0.3s ease;
+  }
+}
+
+// 响应式优化
+@include mobile {
+  .header {
+    height: 70px;
+    
+    .logo {
+      font-size: 1.3rem;
+    }
+    
+    .mobileMenu {
+      top: 70px;
+    }
+  }
+}
+
+// 滚动动画增强
+.header {
+  .logoText,
+  .logoAccent {
+    transition: all $duration-normal $ease-in-out;
+  }
+
+  &.scrolled {
+    .logoText,
+    .logoAccent {
+      color: $dark-ink;
+    }
+  }
+}
+
+// 装饰元素
+.header::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 1px;
+  background: $gradient-red;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.header.scrolled::before {
+  opacity: 0.3;
+} 
