@@ -33,16 +33,22 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'npm'
           
       - name: 清理npm缓存
         run: npm cache clean --force
         
+      - name: 删除package-lock.json和node_modules
+        run: |
+          rm -rf package-lock.json
+          rm -rf node_modules
+        
       - name: 安装依赖
         run: npm install
         
-      - name: 验证vite安装
-        run: npx vite --version
+      - name: 验证依赖安装
+        run: |
+          ls -la node_modules/.bin/vite
+          npm list vite
         
       - name: 构建项目
         run: npm run build
