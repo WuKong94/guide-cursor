@@ -35,11 +35,19 @@ jobs:
           node-version: '18'
           cache: 'npm'
           
+      - name: 清理npm缓存
+        run: npm cache clean --force
+        
       - name: 安装依赖
-        run: npm ci
+        run: npm install
+        
+      - name: 验证vite安装
+        run: npx vite --version
         
       - name: 构建项目
         run: npm run build
+        env:
+          NODE_ENV: production
         
       - name: 设置Pages
         uses: actions/configure-pages@v5
