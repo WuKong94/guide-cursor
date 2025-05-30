@@ -9,15 +9,15 @@ import styles from './Hero.module.scss';
 
 const heroImages = [
   {
-    url: 'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
+    url: 'https://images.unsplash.com/photo-1559717201-fbb671ff56b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
     key: 'beijing'
   },
   {
-    url: 'https://images.unsplash.com/photo-1537519732345-d89d45b6e89a?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
+    url: 'https://images.unsplash.com/photo-1474181487882-5abf3f0ba6c2?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
     key: 'shanghai'
   },
   {
-    url: 'https://images.unsplash.com/photo-1582192730841-2a8657ff7d46?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
+    url: 'https://images.unsplash.com/photo-1609920658906-8223bd289001?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80',
     key: 'hangzhou'
   }
 ];
