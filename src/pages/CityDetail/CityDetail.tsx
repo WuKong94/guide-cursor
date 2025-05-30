@@ -234,7 +234,7 @@ export const CityDetail: React.FC = () => {
             {t('cityDetail.cuisine.title')}
           </motion.h2>
           <motion.div className={styles.cuisineGrid} variants={itemVariants}>
-            {city.cuisine.map((dish, index) => (
+            {city.cuisine.map((dish) => (
               <div key={dish.name.en} className={styles.cuisineItem}>
                 <span className={styles.cuisineIcon}>{dish.icon}</span>
                 <span className={styles.cuisineName}>{dish.name[currentLang]}</span>

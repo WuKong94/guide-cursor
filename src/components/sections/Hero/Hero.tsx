@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { FiArrowDown, FiPlay, FiArrowRight } from 'react-icons/fi';
 import { Button } from '@/components/common/Button/Button';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
-import { heroVariants, itemVariants, containerVariants } from '@/utils/animations';
+import { itemVariants, containerVariants } from '@/utils/animations';
 import styles from './Hero.module.scss';
 
 const heroImages = [

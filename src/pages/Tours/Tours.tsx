@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import { FiClock, FiUsers, FiMapPin, FiStar, FiArrowRight, FiCalendar, FiDollarSign } from 'react-icons/fi';
+import { FiClock, FiUsers, FiMapPin, FiStar, FiArrowRight, FiCalendar } from 'react-icons/fi';
 import { Button } from '@/components/common/Button/Button';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import { containerVariants, itemVariants } from '@/utils/animations';

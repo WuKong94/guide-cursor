@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
 
             {/* Social Links */}
             <div className={styles.social}>
-              {socialLinks.map((social, index) => (
+              {socialLinks.map((social) => (
                 <motion.a
                   key={social.name}
                   href={social.url}
